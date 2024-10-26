@@ -1,0 +1,23 @@
+.services-section {
+    padding: 50px;
+    background-color: black;
+    color: white;
+}
+
+.services-section h2 {
+    text-align: left; 
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+}
+
+.service-card {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}

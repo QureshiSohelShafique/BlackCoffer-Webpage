@@ -1,0 +1,89 @@
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 80px; 
+    background-color: #000000;
+    color: white;
+    position: relative;
+    height: 40vh; 
+    background-image: url('/wave-pattern.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px; 
+    margin-top: 60px; 
+}
+
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    max-width: 400px; 
+    margin-top: 60px; 
+}
+
+.hero-title {
+    font-size: 64px; 
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.hero-description-container {
+    position: relative;
+    padding-top: 16px; 
+}
+
+.hero-description-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px; 
+    height: 9px; 
+    background-color: #0000FF;
+}
+
+.hero-description {
+    font-size: 16px; 
+    margin: 0;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 0;
+    font-size: 16px; 
+    cursor: pointer;
+    transition: gap 0.3s ease;
+    width: fit-content;
+    margin-top: 12px; 
+}
+
+.hero-button::after {
+    content: '>';
+    width: 24px;
+    height: 24px;
+    background-color: #0000FF;
+    display: inline-block;
+    color: white;
+    font-size: 24px; 
+    margin-left: 4px;
+}
+
+.hero-button:hover {
+    gap: 12px;
+}
